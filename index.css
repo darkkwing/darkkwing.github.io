@@ -1,0 +1,40 @@
+.titulo-principal{
+      color: rgb(52, 6, 104);
+    font-size: 3em;
+
+}
+
+.imagen-decorativa{
+   width: 200px;
+    border: 2px solid rgb(52, 6, 104);
+    display: block; 
+    margin: 0 auto; 
+}
+
+.boton-accion {
+    background-color: #007bff; 
+    color: white;
+    padding: 10px 15px;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+.parrafo-introduccion {
+    color: #333;
+    font-family: 'Arial', sans-serif; 
+    line-height: 1.6; 
+    margin-bottom: 20px;
+}
+
+
+#descripcion {  
+    margin-top: 30px;
+}
+
+#miBotonCV {
+    background-color: rgb(52, 6, 104); 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;    
+}
