@@ -1,0 +1,134 @@
+:root {
+    
+  --first-color: rgb(192, 192, 192);
+  --first-alpha-color: rgba(192, 192, 192, 0.75);
+
+  --second-color: rgb(37, 37, 37);
+  --second-alpha-color: rgba(37, 37, 37, 0.75);
+
+  --third-color: rgb(105, 105, 105);
+  --third-alpha-color: rgba(105, 105, 105, 0.75);
+
+  --link-color: rgb(78, 62, 237);
+
+  --bg-color: rgb(245, 245, 245);
+  --bg-alpha-color: rgba(245, 245, 245, 0.75);
+
+
+    --icon-color: rgb(124, 75, 242);
+}
+
+
+.background {
+    background-color: rgb(34, 34, 34);
+}
+
+/* ***********Reset Styles************/
+body {
+    font-family: "Exo 2";
+}
+
+a {
+    color: var(--link-color);
+    transition: all 0.4s ease-out
+}
+
+a:hover {
+    color: var(--first-color);
+}
+
+
+/* ***********Boostrap Styles********** */
+.bg-dark {
+    background-color: var(--second-color) !important;
+}
+
+.dropdown-item {
+    color: var(--first-alpha-color);
+    font-weight: bold;
+    transition: all 0.4s ease-out
+}
+
+.dropdown-item:hover {
+    color: var(-third-alpha-color);
+    font-weight: bold;
+}
+
+.navbar-brand img {
+    width: auto;
+    height: 4.4rem;
+    color: var(--icon-color);
+    filter: brightness(0%) saturate(100%) invert(21%) sepia(85%) saturate(5300%) hue-rotate(245deg) brightness(95%) contrast(95%);
+}
+
+
+
+.navbar-dark {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2878, 62, 237, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: all 0.4s ease-out
+}
+
+.navbar-dark .navbar-toggler:hover {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28224, 224, 224, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    opacity: 0.90;
+}
+
+.nav-item {
+    transition: all 0.4s ease-out
+}
+
+.nav-item:hover {
+    background-color: var(--first-alpha-color);
+}
+
+.nav-link {
+    margin-left: 0.5rem;
+    color: var(--first-color);
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: var(--bs-white);
+}
+
+
+
+/* ***********My Styles*********** */
+#LogoJaPFooter {
+    height: calc(1.35rem + 0.9vw);
+    width: auto;
+    color: var(--icon-color);
+    filter: brightness(0%) saturate(100%) invert(21%) sepia(85%) saturate(5300%) hue-rotate(245deg) brightness(95%) contrast(95%);
+}
+
+
+#LogoJaPFooter:hover {
+    filter: invert(0);
+}
+
+
+
+
+
+
+/*// X-Small devices (portrait phones, less than 576px)*/
+/*// No media query for `xs` since this is the default in Bootstrap*/
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .nav-item:hover {
+        background-color: transparent;
+    }
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {}
